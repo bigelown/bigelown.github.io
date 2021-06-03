@@ -8,7 +8,17 @@
 
   <body>
     <h1>Noah Bigelow's Code Blog</h1>
-      <h2>Assignment 4</h2>
-        <p>This assignment was surprisingly difficult for me because I could not figure out how to get the .css files and .js files to run. I saw that the request was not being responded to in the error log, but I could not find any resources online that did not use “express.” Eventually after trial and error, I got it working, however, I assume that a better way would be through fs.readFileSync(). I also could not figure out how to create environment variables. There were very few helpful resources out there. My normal go-tos, Stack Exchange, W3 schools, Geeks for Geeks, where of very little help. The lectures also were pretty vague last week, so I could not rely on my notes. A few posts on campus wire were useful though.</p>
-  </body>
+      <h2>Assignment 5</h2>
+        <p>Something about javascript syntax is very unintuitive for me. Nearly all of my problems came from syntax errors. I was always on the right track and a few times was literally a “{}” away from having it correct, but the lack of a clear error log made debugging extremely difficult. I spent at least 5 hours just trying to figure out why my page was not rendering using my main.handlebars as the default layout, only to realize that it was because index.html caused a conflict. The next issue that I ran into was displaying the twit of the specified index. Which after a few hours I found out that it was the difference between “res.status(200).render('twitContainer', {singleTwit})” and “res.status(200).render('twitContainer', singleTwit)”. </p>
+        <br></br>
+        <p>I learned from these assignments that I am going to be avoiding javascript in the future if I can help it.</p>
+        <br></br>
+        <p>Aside from the official handlebars documentation, I could not find any external resources that were helpful. The demo code from lectures was useful and re-watching the lectures was good, but the most useful resource was Campus Wire.</p>
+        <br></br>
+        <p>Google Searches (the few I found in history):</p>
+        <ul>
+          <li>handlebars render multiple partials</li>
+          <li>handlebars each specific index</li>
+          <li>Handlebars not rendering default layout</li>
+        </ul>
 </html>
